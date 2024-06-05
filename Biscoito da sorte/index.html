@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&family=Dancing+Script&family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    
+    <title>Biscoito da sorte</title>
+</head>
+
+<body>
+    <main>
+    <div class="onePag">
+            <h1>Qual é a sua sorte de hoje?</h1>
+            <p>Abra o biscoito e descubra!</p>
+            <img onclick="handleClick()" class="OneCookie" src="IMAGENS/one-cookie.png" alt="biscoito da sorte">
+        </div>        
+    
+        <div class ="twoPag hide">
+            <h2>Aqui está a sua sorte de hoje:</h2>
+
+            <div id="container">
+                <p>O sucesso é a soma de pequenos esforços repetidos dia após dia.</p>
+                <p class="hide">Se alguém está tão cansado que não possa te dar um sorriso, deixa-lhe o teu.</p>
+                <p class="hide">Acredite em si próprio e chegará um dia em que os outros não terão outra escolha senão acreditar com você.</p>
+                <p class="hide">E se não for para rir dos nossos erros, qual é a graça da vida?</p>
+                <p class="hide">Confie em você e no seu potencial. Você pode fazer muito mais do que imagina!</p>
+                <p class="hide">A força que você busca mora dentro de você.</p>
+                <p class="hide">A força que você busca mora dentro de você.</p>
+                <p class="hide">Acredite no caminho, acredite em você.</p>
+                <p class="hide">Faça hoje o que vai te dar orgulho amanhã.</p>
+                <p class="hide">O tempo passou e você se transformou. Tire um tempo para admirar a nova pessoa que você se tornou.</p>
+                <p class="hide">Será que você está desmotivado? Ou será que está apenas gastando energias no lugar errado?</p>
+            </div>
+
+            <img class="TwoCookie" src="IMAGENS/two-cookie.png" alt="biscoito da sorte">
+            <button onclick="handleClickTwo()" class="btnReseat">Abrir outro biscoito</button>
+        </div>    
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>

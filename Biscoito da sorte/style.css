@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    --h1-h2: "Montserrat", sans-serif;
+    --onePagP: "DM Sans", sans-serif;
+    --twoPagP: "Dancing Script", sans-serif;
+    --buttom: "DM Sans", sans-serif;
+}
+
+body{
+    background-image: linear-gradient(123deg ,#190361 0%, #BB00FF 100%);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.onePag{
+    width: min(42.8rem, 90%);
+    border-radius: .5rem;
+    padding: 4.8rem 6.4rem 6.4rem;
+
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    box-shadow: 0 2rem 5rem rgb(0, 0, 0, 0.8) ;
+}
+
+/*one-page*/
+.onePag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    width: 25.8rem;
+
+    font-family: var(--h1-h2);
+    font-weight: bold;
+    font-size: 2.4rem;
+
+    color: #34355B;
+
+    text-align: center;
+}
+
+p{
+    font-family: var(--onePagP);
+    color: #34355B;
+    margin: 1.4rem 0 2.0rem ;
+    font-size: 1.5rem;
+}
+
+/*animation one-cookie*/
+.OneCookie{
+    cursor: pointer;
+    animation: backwards;
+    animation: vibrate-2 0.3s linear infinite both;
+}
+.OneCookie:hover{
+    animation-duration: 0.1s;
+}
+@keyframes vibrate-2 {
+    0% {
+        -webkit-transform: translate(0);
+                transform: translate(0);
+      }
+      20% {
+        -webkit-transform: translate(2px, -2px);
+                transform: translate(2px, -2px);
+      }
+      40% {
+        -webkit-transform: translate(2px, 2px);
+                transform: translate(2px, 2px);
+      }
+      60% {
+        -webkit-transform: translate(-2px, 2px);
+                transform: translate(-2px, 2px);
+      }
+      80% {
+        -webkit-transform: translate(-2px, -2px);
+                transform: translate(-2px, -2px);
+      }
+      100% {
+        -webkit-transform: translate(0);
+                transform: translate(0);
+      }
+}
+
+/*two-page*/
+.twoPag{
+    width: min(42.8rem, 90%);
+    border-radius: .5rem;
+    background-color: white; 
+    
+    margin: 0 auto;
+
+    padding: 4.8rem 6.4rem;
+    box-shadow: 0 2rem 5rem rgb(0, 0, 0, 0.8) ;
+}
+
+h2{
+    text-align: center;
+    font-family: var(--h1-h2);
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+
+#container p{
+    margin: 2.7rem 0 0rem;
+    font-family: var(--twoPagP);
+    font-size: 2.4rem;
+    text-align: center;
+
+    background-color: #E4EDF1;
+    color: #000000;
+
+    padding: 1rem;
+
+    box-shadow: .2rem .2rem .2rem rgb(85, 85, 85, 50%);
+}
+
+.TwoCookie{
+    margin: 6rem 0 6rem;
+    animation: bounce-top .9s both;
+}
+
+button{
+    font-family: var(--buttom);
+    font-weight: bold;
+    font-size: 1.5rem;
+
+    color: #FFFFFF;
+    background-color: #FF9500;
+    border: none;
+    border-radius: .4rem;
+
+    padding: 1.6rem;
+
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #ff7300;
+}
+
+/*animation twoImage*/
+@keyframes bounce-top{
+    0% {
+        -webkit-transform: translateY(-45px);
+                transform: translateY(-45px);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+        opacity: 1;
+      }
+      24% {
+        opacity: 1;
+      }
+      40% {
+        -webkit-transform: translateY(-24px);
+                transform: translateY(-24px);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+      }
+      65% {
+        -webkit-transform: translateY(-12px);
+                transform: translateY(-12px);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+      }
+      82% {
+        -webkit-transform: translateY(-6px);
+                transform: translateY(-6px);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+      }
+      93% {
+        -webkit-transform: translateY(-4px);
+                transform: translateY(-4px);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+      }
+      25%,
+      55%,
+      75%,
+      87% {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+      }
+      100% {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        opacity: 1;
+      }
+}
+
+.hide{
+    display: none;
+}
